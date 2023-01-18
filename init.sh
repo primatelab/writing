@@ -16,7 +16,7 @@ if [[ $(grep -c "msk=1;38;5;95" ~/.bash_aliases) -eq 0 ]]; then
 fi
 
 
-########## Install screen, git & pandoc #############
+########## Detect package manager #############
 
 if type yum &>/dev/null; then
   pac='yum'
@@ -27,8 +27,15 @@ else
   exit
 fi
 
-for i in git screen pandoc; do
+
+########## Install requirements #############
+
+for i in git screen python3-pip pandoc; do
   type $i &>/dev/null || echo -e "$darkbrown Installing $i" && sudo $pac install -y $i
+done
+
+for i in pyqt5 lxml; do
+  type $i &>/dev/null || echo -e "$darkbrown Installing $i" && pip install $i
 done
 
 

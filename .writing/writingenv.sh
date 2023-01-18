@@ -14,6 +14,7 @@ alias download="$SCRIPT_DIR/download.sh"
 # alias write="$SCRIPT_DIR/write.sh"
 # alias wryte="$SCRIPT_DIR/write.sh"
 alias manuskript="$SCRIPT_DIR/write.sh"
+alias msk="$SCRIPT_DIR/write.sh"
 alias atmo="$SCRIPT_DIR/atmo.sh"
 alias compile="$SCRIPT_DIR/compile.sh"
 
