@@ -1,0 +1,29 @@
+[General]
+Name=Wei Long
+
+[Background]
+Color=#000000
+ImageFile=kowloon3.jpg
+Type=3
+
+[Foreground]
+Color=#ffffff
+Margin=40
+Opacity=75
+Padding=10
+Position=1
+Rounding=5
+Width=900
+
+[Spacings]
+Alignment=0
+IndentFirstLine=true
+LineSpacing=150
+ParagraphAbove=0
+ParagraphBelow=0
+TabWidth=48
+
+[Text]
+Color=#2e3436
+Font="DejaVu Serif,14,-1,5,50,0,0,0,0,0"
+Misspelled=#ff0000
