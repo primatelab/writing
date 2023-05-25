@@ -15,9 +15,10 @@ while getopts "hy:esf:" opt; do
   case $opt in
     y) YAML=$OPTARG ;;
     e) OUTPUT_FORMAT=epub ;;
+    d) OUTPUT_FORMAT=docx ;;
     s) TEMPLATE=md2short.sh ;;
     f) OUTPUT_FORMAT=$OPTARG ;;
-    h) echo "USAGE: compile [-y frontmatter.yml ] [ -e | -f format ] FILE.msk" ;;
+    h) echo "USAGE: compile [-y frontmatter.yml ] [ -d | -e | -f format ] FILE.msk" ;;
   esac
 done
 shift $((OPTIND-1))
